@@ -114,3 +114,21 @@ const filtered = properPlanets.filter(function(arguement){
  console.log("test", filtered);
  
 addArrayToDOM(filtered);
+
+
+// Use the reduce method to create a sentence from the words in the following array
+
+const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+
+const reducedWords = words.reduce(
+   function (currentTotal, next) {
+       return currentTotal + " " + next
+       console.log("one", currentWord);
+       console.log(next);
+   }
+)
+console.log(reducedWords)
+planetEl.innerHTML += 
+    `<div>
+        <h2>${reducedWords}</h2>
+    </div>`;
